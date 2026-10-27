@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#292a27">
+  <meta name="description" content="EYVAN — طراحی داخلی، معماری و اجرای فضاهای خاص">
+  <title>EYVAN | معماری و طراحی داخلی</title>
+  <style>
+    :root {
+      --charcoal: #292a27;
+      --charcoal-soft: #363832;
+      --cream: #f2eee5;
+      --cream-deep: #e6dfd1;
+      --muted: #b9b5aa;
+      --line: rgba(242, 238, 229, .17);
+      --accent: #c9b99b;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(201,185,155,.10), transparent 42%),
+        var(--charcoal);
+      color: var(--cream);
+      font-family: Tahoma, Arial, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 28px 16px;
+    }
+    a { color: inherit; text-decoration: none; }
+    .page {
+      width: min(100%, 460px);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 34px 24px 24px;
+      background: rgba(41,42,39,.92);
+      box-shadow: 0 24px 80px rgba(0,0,0,.22);
+    }
+    .eyvan-mark {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 18px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--accent);
+      color: var(--cream);
+      border-radius: 50%;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: 24px;
+      letter-spacing: 3px;
+      padding-left: 3px;
+      position: relative;
+    }
+    .eyvan-mark::before {
+      content: "";
+      position: absolute;
+      inset: 6px;
+      border: 1px solid rgba(201,185,155,.38);
+      border-radius: 50%;
+    }
+    .eyvan-mark span { position: relative; }
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font-size: 10px;
+      text-align: center;
+      margin: 0 0 9px;
+      direction: ltr;
+    }
+    h1 {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      font-size: clamp(32px, 9vw, 43px);
+      line-height: 1.15;
+      font-weight: 500;
+      text-align: center;
+      letter-spacing: 5px;
+      direction: ltr;
+    }
+    .subtitle {
+      margin: 13px 0 25px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 2;
+    }
+    .rule {
+      width: 48px;
+      height: 1px;
+      margin: 0 auto 25px;
+      background: var(--accent);
+    }
+    .section-label {
+      margin: 0 0 11px;
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: .5px;
+    }
+    .links { display: grid; gap: 10px; }
+    .link-card {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-height: 66px;
+      padding: 13px 15px;
+      border: 1px solid var(--line);
+      border-radius: 15px;
+      background: linear-gradient(110deg, rgba(255,255,255,.035), rgba(255,255,255,.012));
+      transition: transform .18s ease, border-color .18s ease, background .18s ease;
+    }
+    .link-card:hover, .link-card:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(201,185,155,.72);
+      background: rgba(201,185,155,.08);
+      outline: none;
+    }
+    .icon {
+      width: 39px;
+      height: 39px;
+      flex: 0 0 39px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(201,185,155,.48);
+      border-radius: 12px;
+      color: var(--accent);
+    }
+    .icon svg { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+    .link-copy { min-width: 0; flex: 1; }
+    .link-title { display: block; font-size: 13px; font-weight: 600; line-height: 1.8; }
+    .link-detail { display: block; color: var(--muted); font-size: 11px; line-height: 1.7; direction: ltr; text-align: right; overflow-wrap: anywhere; }
+    .arrow { color: var(--accent); font-size: 18px; }
+    .contact-label { margin-top: 24px; }
+    .phone-card { background: rgba(242,238,229,.045); }
+    .phone-number { direction: ltr; text-align: right; font-variant-numeric: tabular-nums; }
+    .footer {
+      margin-top: 25px;
+      padding-top: 18px;
+      border-top: 1px solid var(--line);
+      color: #8f9087;
+      font-size: 10px;
+      line-height: 1.9;
+      text-align: center;
+    }
+    .footer strong { color: var(--accent); font-weight: 500; letter-spacing: 2px; direction: ltr; display: inline-block; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <div class="eyvan-mark" aria-label="EYVAN"><span>EY</span></div>
+    <p class="eyebrow">INTERIOR ARCHITECTURE</p>
+    <h1>EYVAN</h1>
+    <p class="subtitle">طراحی داخلی، معماری و خلق فضاهای ماندگار</p>
+    <div class="rule" aria-hidden="true"></div>
+
+    <p class="section-label">ما را در اینستاگرام دنبال کنید</p>
+    <nav class="links" aria-label="صفحه‌های اینستاگرام">
+      <a class="link-card" href="https://www.instagram.com/shadeghbal_art/" target="_blank" rel="noopener noreferrer" aria-label="باز کردن اینستاگرام اول">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.7" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="link-copy">
+          <span class="link-title">اینستاگرام اول</span>
+          <span class="link-detail">@shadeghbal_art</span>
+        </span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link-card" href="https://www.instagram.com/sevinzamaniart/" target="_blank" rel="noopener noreferrer" aria-label="باز کردن اینستاگرام دوم">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.7" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="link-copy">
+          <span class="link-title">اینستاگرام دوم</span>
+          <span class="link-detail">@sevinzamaniart</span>
+        </span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </nav>
+
+    <p class="section-label contact-label">ارتباط با ما</p>
+    <div class="links">
+      <a class="link-card phone-card" href="tel:+989144720692" aria-label="تماس با شماره اول">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M6.7 3.8 9.5 7l-1.8 2.2a14 14 0 0 0 7.1 7.1l2.2-1.8 3.2 2.8-.8 3a2 2 0 0 1-2.2 1.4C9 20.6 3.4 15 2.3 6.8a2 2 0 0 1 1.4-2.2z"/></svg>
+        </span>
+        <span class="link-copy">
+          <span class="link-title">تماس با ما · شماره اول</span>
+          <span class="link-detail phone-number">0914 472 0692</span>
+        </span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+      <a class="link-card phone-card" href="tel:+989140854556" aria-label="تماس با شماره دوم">
+        <span class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M6.7 3.8 9.5 7l-1.8 2.2a14 14 0 0 0 7.1 7.1l2.2-1.8 3.2 2.8-.8 3a2 2 0 0 1-2.2 1.4C9 20.6 3.4 15 2.3 6.8a2 2 0 0 1 1.4-2.2z"/></svg>
+        </span>
+        <span class="link-copy">
+          <span class="link-title">تماس با ما · شماره دوم</span>
+          <span class="link-detail phone-number">0914 085 4556</span>
+        </span>
+        <span class="arrow" aria-hidden="true">↗</span>
+      </a>
+    </div>
+
+    <footer class="footer">
+      طراحی فضا با نگاه دقیق و جزئیات ماندگار<br>
+      <strong>EYVAN</strong>
+    </footer>
+  </main>
+</body>
+</html>
