@@ -42,29 +42,21 @@
       background: rgba(41,42,39,.92);
       box-shadow: 0 24px 80px rgba(0,0,0,.22);
     }
-    .eyvan-mark {
-      width: 76px;
-      height: 76px;
-      margin: 0 auto 18px;
-      display: grid;
-      place-items: center;
-      border: 1px solid var(--accent);
-      color: var(--cream);
-      border-radius: 50%;
-      font-family: Georgia, 'Times New Roman', serif;
-      font-size: 24px;
-      letter-spacing: 3px;
-      padding-left: 3px;
-      position: relative;
+    .eyvan-logo-wrap {
+      width: 86px;
+      height: 92px;
+      margin: 0 auto 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
-    .eyvan-mark::before {
-      content: "";
-      position: absolute;
-      inset: 6px;
-      border: 1px solid rgba(201,185,155,.38);
-      border-radius: 50%;
+    .eyvan-logo {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      filter: drop-shadow(0 0 5px rgba(242,238,229,.04));
     }
-    .eyvan-mark span { position: relative; }
     .eyebrow {
       color: var(--accent);
       text-transform: uppercase;
@@ -156,7 +148,7 @@
 </head>
 <body>
   <main class="page">
-    <div class="eyvan-mark" aria-label="EYVAN"><span>EY</span></div>
+    <div class="eyvan-logo-wrap"><img class="eyvan-logo" src="logo-eyvan.png" alt="لوگوی EYVAN"></div>
     <p class="eyebrow">INTERIOR ARCHITECTURE</p>
     <h1>EYVAN</h1>
     <p class="subtitle">طراحی داخلی، معماری و خلق فضاهای ماندگار</p>
@@ -169,7 +161,7 @@
           <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.7" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
         </span>
         <span class="link-copy">
-          <span class="link-title">اینستاگرام اول</span>
+          <span class="link-title">شادی اقبال آرت</span>
           <span class="link-detail">@shadeghbal_art</span>
         </span>
         <span class="arrow" aria-hidden="true">↗</span>
@@ -179,7 +171,7 @@
           <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.7" cy="6.5" r=".8" fill="currentColor" stroke="none"/></svg>
         </span>
         <span class="link-copy">
-          <span class="link-title">اینستاگرام دوم</span>
+          <span class="link-title">سوین زمانی آرت</span>
           <span class="link-detail">@sevinzamaniart</span>
         </span>
         <span class="arrow" aria-hidden="true">↗</span>
@@ -193,7 +185,7 @@
           <svg viewBox="0 0 24 24"><path d="M6.7 3.8 9.5 7l-1.8 2.2a14 14 0 0 0 7.1 7.1l2.2-1.8 3.2 2.8-.8 3a2 2 0 0 1-2.2 1.4C9 20.6 3.4 15 2.3 6.8a2 2 0 0 1 1.4-2.2z"/></svg>
         </span>
         <span class="link-copy">
-          <span class="link-title">تماس با ما · شماره اول</span>
+          <span class="link-title">تماس با ما · اقبال</span>
           <span class="link-detail phone-number">0914 472 0692</span>
         </span>
         <span class="arrow" aria-hidden="true">↗</span>
@@ -203,7 +195,7 @@
           <svg viewBox="0 0 24 24"><path d="M6.7 3.8 9.5 7l-1.8 2.2a14 14 0 0 0 7.1 7.1l2.2-1.8 3.2 2.8-.8 3a2 2 0 0 1-2.2 1.4C9 20.6 3.4 15 2.3 6.8a2 2 0 0 1 1.4-2.2z"/></svg>
         </span>
         <span class="link-copy">
-          <span class="link-title">تماس با ما · شماره دوم</span>
+          <span class="link-title">تماس با ما · زمانی</span>
           <span class="link-detail phone-number">0914 085 4556</span>
         </span>
         <span class="arrow" aria-hidden="true">↗</span>
